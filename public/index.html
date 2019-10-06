@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="expires" content="0">
+    <title>D&D map Tool</title>
+    <link rel="stylesheet" href="./master.css">
+</head>
+
+<body>
+    <div id="toolbar">
+        <select id="mapSelector" name="">
+            <option value="images/maps/cragmaw castle.jpg">cragmaw castle</option>
+            <option value="images/maps/crawgmaw hideout.jpg">crawgmaw hideout</option>
+            <option value="images/maps/redbrand hideout.jpg">redbrand hideout</option>
+            <option value="images/maps/ruins of thundertree.jpg">ruins of thundertree</option>
+            <option value="images/maps/wave echo cave.jpg">wave echo cave</option>
+            <option value="images/maps/ambush.jpg">ambush</option>
+        </select>
+        <button type="button" name="button" id="reset2">reset</button>
+    </div>
+
+    <div class="container" id="js-container">
+        <canvas class="canvas" id="js-canvas"></canvas>
+        <img class="map" src="images/maps/crawgmaw hideout.jpg" />
+    </div>
+
+    <div id='tools-menu'>
+        <ul class='items'>
+            <li id='erase'>Eraser</li>
+            <li id='write'>Write</li>
+            <li>Delete</li>
+        </ul>
+        <hr />
+        <ul class='items'>
+            <li>Lock selection</li>
+        </ul>
+        <hr />
+        <ul class='items'>
+            <li id='reset'>Reset</li>
+            <li id='reveal'>Reveal map</li>
+        </ul>
+    </div>
+
+    <!-- <script nomodule src="./js/lib/jquery-3.4.1.min.js" ></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
